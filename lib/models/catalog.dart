@@ -1,5 +1,18 @@
+class CatalogModel{
+  static final items =[Item(
+      id: 1,
+      name: "iphone 12 pro",
+      desc: "Apple iphone 12th gen",
+      price: 999,
+      color: "33505a",
+      image: "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71hIfcIPyxS._SX679_.jpg",
+  )
+  ];
+}
+
+
 class Item{
-  final String id;
+  final int id;
   final String name;
   final String desc;
   final num price;
@@ -8,13 +21,3 @@ class Item{
 
   Item({required this.id, required this.name, required this.desc, required this.price, required this.color, required this.image});
 }
-final products =[Item(
-  id: "C001",
-  name: "iphone 12 pro",
-  desc: "Apple iphone 12th gen",
-  price: 999,
-  color: "33505a",
-  image: "https://amzn.eu/d/e9olXgy"
-)
-
-];
