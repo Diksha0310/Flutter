@@ -12,7 +12,9 @@ class HomeDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
       backgroundColor: MyTheme.creamColor,
       bottomNavigationBar:  Container(
         color: Colors.white,
@@ -48,6 +50,8 @@ class HomeDetailPage extends StatelessWidget {
                     catalog.name.text.xl4.color(MyTheme.darkBluish).bold.make(),
                     catalog.desc.text.textStyle(context.captionStyle).xl.make(),
                     10.heightBox,
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
+                    .text.textStyle(context.captionStyle).make().p8(),
                   ],
                 ).py64(),
               ),
